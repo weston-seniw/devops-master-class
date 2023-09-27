@@ -69,11 +69,12 @@ kind: Service
 metadata:
   labels:
     app: hello-world-rest-api
+    version: v1
   name: hello-world-rest-api
   namespace: default
 spec:
   ports:
-  - nodePort: 32208
+  - nodePort: 30317
     port: 8080
     protocol: TCP
     targetPort: 8080
